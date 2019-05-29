@@ -1,0 +1,5 @@
+org.roboticsapi.kuka.lwr.extension.LWRExtension
+org.roboticsapi.kuka.lwr.runtime.extension.SoftRobotLWRExtension
+org.roboticsapi.kuka.lwr.collada.extension.IiwaColladaExtension
+org.roboticsapi.kuka.lwr.collada.extension.LwrColladaExtension
+org.roboticsapi.kuka.lwr.javarcc.extension.KukaLwrJavaRCCExtension
