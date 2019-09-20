@@ -1,0 +1,6 @@
+org.roboticsapi.device.kuka.lwr.extension.LwrExtension
+org.roboticsapi.device.kuka.lwr.javarcc.extension.LwrJavaRccExtension
+org.roboticsapi.device.kuka.lwr.runtime.rpi.extension.LwrRuntimeExtension
+org.roboticsapi.device.kuka.lwr.visualization.extension.Lwr4ColladaExtension
+org.roboticsapi.device.kuka.lwr.visualization.extension.LwrIiwaColladaExtension
+org.roboticsapi.device.kuka.lwr.collision.extension.LwrCollisionExtension
