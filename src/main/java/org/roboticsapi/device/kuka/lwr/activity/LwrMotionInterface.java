@@ -24,7 +24,7 @@ import org.roboticsapi.framework.robot.activity.MotionInterface;
 public interface LwrMotionInterface extends MotionInterface {
 
 	/**
-	 * Creates an {@link RtActivity} that activates the {@link Lwr4}'s
+	 * Creates an {@link Activity} that activates the {@link Lwr4}'s
 	 * gravitation compensation mode. Will switch to {@link JointPositionController}
 	 * when cancelled.
 	 *
@@ -35,7 +35,7 @@ public interface LwrMotionInterface extends MotionInterface {
 	Activity gravComp(DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that activates the {@link Lwr4}'s
+	 * Creates an {@link Activity} that activates the {@link Lwr4}'s
 	 * gravitation compensation mode. Will switch to supplied
 	 * {@link JointController} when cancelled.
 	 *
@@ -47,7 +47,7 @@ public interface LwrMotionInterface extends MotionInterface {
 	Activity gravComp(JointController finalController, DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that activates the {@link Lwr4}'s
+	 * Creates an {@link Activity} that activates the {@link Lwr4}'s
 	 * gravitation compensation mode. Will switch to supplied
 	 * {@link CartesianController} when cancelled.
 	 *
@@ -59,7 +59,7 @@ public interface LwrMotionInterface extends MotionInterface {
 	Activity gravComp(CartesianController finalController, DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that performs a linear motion to the given
+	 * Creates an {@link Activity} that performs a linear motion to the given
 	 * cartesian goal. The RtActivity expects to establish contact on the way to the
 	 * goal and will then build up the specified (absolute) cartesian force and
 	 * stop.
@@ -80,7 +80,7 @@ public interface LwrMotionInterface extends MotionInterface {
 	Activity linToContact(Pose to, double contactForce, DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that performs a linear motion to the given
+	 * Creates an {@link Activity} that performs a linear motion to the given
 	 * cartesian goal. The RtActivity expects to establish contact on the way to the
 	 * goal and will then build up the specified cartesian force and stop.
 	 *
@@ -102,7 +102,7 @@ public interface LwrMotionInterface extends MotionInterface {
 			throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that performs a linear motion to the given
+	 * Creates an {@link Activity} that performs a linear motion to the given
 	 * cartesian goal. The RtActivity expects to establish contact on the way to the
 	 * goal and will then build up the specified (absolute) cartesian force and
 	 * stop.
@@ -131,7 +131,7 @@ public interface LwrMotionInterface extends MotionInterface {
 			DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that performs a linear motion to the given
+	 * Creates an {@link Activity} that performs a linear motion to the given
 	 * cartesian goal. The RtActivity expects to establish contact on the way to the
 	 * goal and will then build up the specified cartesian force and stop.
 	 *
@@ -158,7 +158,7 @@ public interface LwrMotionInterface extends MotionInterface {
 			boolean absoluteForce, DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that performs a linear motion to the given
+	 * Creates an {@link Activity} that performs a linear motion to the given
 	 * cartesian goal. The RtActivity expects to establish contact on the way to the
 	 * goal and will then build up the specified (absolute) cartesian force and
 	 * stop.
@@ -181,7 +181,7 @@ public interface LwrMotionInterface extends MotionInterface {
 			throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that performs a linear motion to the given
+	 * Creates an {@link Activity} that performs a linear motion to the given
 	 * cartesian goal. The RtActivity expects to establish contact on the way to the
 	 * goal and will then build up the specified cartesian force and stop.
 	 *
@@ -204,7 +204,7 @@ public interface LwrMotionInterface extends MotionInterface {
 			DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that performs a linear motion to the given
+	 * Creates an {@link Activity} that performs a linear motion to the given
 	 * cartesian goal. The RtActivity expects to establish contact on the way to the
 	 * goal and will then build up the specified (absolute) cartesian force and
 	 * stop.
@@ -234,7 +234,7 @@ public interface LwrMotionInterface extends MotionInterface {
 			DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that performs a linear motion to the given
+	 * Creates an {@link Activity} that performs a linear motion to the given
 	 * cartesian goal. The RtActivity expects to establish contact on the way to the
 	 * goal and will then build up the specified cartesian force and stop.
 	 *
@@ -262,7 +262,7 @@ public interface LwrMotionInterface extends MotionInterface {
 			boolean absoluteForce, double speedFactor, DeviceParameters... parameters) throws RoboticsException;
 
 	/**
-	 * Creates an {@link RtActivity} that releases contact force by performing a
+	 * Creates an {@link Activity} that releases contact force by performing a
 	 * linear motion from the {@link Lwr4}'s commanded position to its measured
 	 * position.
 	 *
